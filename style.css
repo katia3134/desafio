@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    :root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'caveat', cursive;
+    --fonte3: 'Sriracha', cursive;
+    }
+
+    *{
+    margin: 0%;
+    padding: 0%;
+    font-size: 1em; 
+    }
+
+    html, body{
+    min-height: 100vh;
+    background-color: black;
+    font-family: var(--fonte1);
+    }
+
+    header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+    }
+    header > h1{
+    padding-top: 40px;
+    font-variant: small-caps;
+    font-family: var(--fonte3);
+    font-size: 3em;
+    text-transform: uppercase;
+    padding-bottom: 0.5px;
+    }
+    
+    header > h2 {
+    padding-bottom: 30px;
+    }
+
+    header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    }
+
+    header a:hover, footer a:hover{
+    text-decoration: underline;
+    }
+
+    section {
+    font-family: var(--font2);   
+    padding-top: 30px; 
+    padding-left: 30px;
+    padding-bottom: 40px;
+    line-height: 1.2em;
+    font-size: 2.2em;
+
+    }
+    section > p{
+    padding-bottom: 40px;
+    }
+
+    section.normal{
+    background-color: white;
+    color: black;
+    }
+
+    section.imagem{    
+    color: white;
+    background-color: darkgray;
+    box-shadow: inset 4px 4px 13px 0px rgb(36, 34, 34);
+    background-attachment: fixed;
+    }
+
+    section.imagem >p{
+    background-color: rgba(0, 0, 0, 0.459);
+    display: inline-block; /* para a caixa ficar de tamanho adaptavel ao navegador */
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+    }    
+
+    section#img01{
+        background-image: url(imagens/background001.jpg);
+        background-position: right center;
+        background-size: cover;
+
+    }
+
+    section#img02{
+        background-image: url(imagens/background002.jpg);
+        background-position: right center;
+        background-size: cover;
+
+    }
+
+ footer{
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+}
